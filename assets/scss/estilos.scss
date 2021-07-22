@@ -27,9 +27,13 @@ body{
     box-sizing: border-box;
 }
 
+header{
+    background-color: $bcg-rojo;
+}
+
 // Contacto rapido
 .fastContact{
-    width: 100vv;
+    width: 100;
     color: $bcg-blanco;
     background-color: $bcg-rojo;
     padding: 3px;
@@ -55,9 +59,7 @@ body{
 }
 
 .menu{
-    background-color: $bcg-rojo;
     width: 100%;
-
     display: flex;
     // justify-content: space-between;
     align-items: center;
@@ -65,7 +67,6 @@ body{
     box-shadow: 5px 0 10px rgba(0, 0, 0, .6);
 
     .logo{
-        border: $border-test;
         width: 5%;
         display: flex;
         justify-content: center;
@@ -74,8 +75,21 @@ body{
         display: none;
     }
 
+    #btn-menu{
+        cursor: pointer;
+        display: none;
+    }
+    .label {
+        display: none;
+        padding: 10px;
+
+        :hover{
+            cursor: pointer;
+            background-color: $bcg-developed;
+        }
+    }
+
     .menu_items{
-        border: $border-test;
         display: flex;
         list-style: none;
         width: 90%;
@@ -93,15 +107,6 @@ body{
         }
     }
 
-    // .menu_items li:hover{
-    //     background-color: $bcg-developed;
-    //     transition: .4s;
-    // }
-
-    .btn-menu{
-        cursor: pointer;
-        display: none;
-    }
 }
 
 // Celular
@@ -117,6 +122,53 @@ body{
             .#{$fastContact}{
                 margin: 0 15px 0 5px;
             }
+        }
+    }
+    
+    .menu{
+        position: absolute;
+        background-color: $bcg-rojo;
+
+        .logo{
+            display: block;
+            width: auto;
+            width: 100%;
+
+            display: flex;
+            justify-content: center;
+            margin-left: -30px;
+        }
+
+        .label{
+            display: block;
+        }
+
+        .menu_items{
+            background-color: $bcg-rojo;
+            width: 100%;
+            left: -100%;
+            height: calc(90vh - 78px); //1473 completo con algo abierto
+            top: 60px;
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            transition: all 0.4s;
+
+            flex-direction: column;
+            justify-content: space-around;
+
+            li a {
+                margin-left: 10px;
+                padding: 30px;
+            }
+
+            li:hover{
+                background-color: $bcg-developed;
+            }
+        }
+
+        #btn-menu:checked ~ .menu_items {
+            left: 0;
         }
     }
 }

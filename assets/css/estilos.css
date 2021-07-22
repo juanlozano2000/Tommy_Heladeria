@@ -4,8 +4,11 @@ body {
   outline: 0;
   box-sizing: border-box; }
 
+header {
+  background-color: #6A0E0E; }
+
 .fastContact {
-  width: 100vv;
+  width: 100;
   color: #FFFFFF;
   background-color: #6A0E0E;
   padding: 3px;
@@ -26,20 +29,26 @@ body {
     color: #FFFFFF; }
 
 .menu {
-  background-color: #6A0E0E;
   width: 100%;
   display: flex;
   align-items: center;
   box-shadow: 5px 0 10px rgba(0, 0, 0, 0.6); }
   .menu .logo {
-    border: solid 1px red;
     width: 5%;
     display: flex;
     justify-content: center; }
   .menu .logo_h1 {
     display: none; }
+  .menu #btn-menu {
+    cursor: pointer;
+    display: none; }
+  .menu .label {
+    display: none;
+    padding: 10px; }
+    .menu .label :hover {
+      cursor: pointer;
+      background-color: #9E2222; }
   .menu .menu_items {
-    border: solid 1px red;
     display: flex;
     list-style: none;
     width: 90%;
@@ -52,9 +61,6 @@ body {
       text-decoration: none;
       color: #FFFFFF;
       display: block; }
-  .menu .btn-menu {
-    cursor: pointer;
-    display: none; }
 
 @media screen and (max-width: 767px) {
   .fastContact {
@@ -67,4 +73,35 @@ body {
     .fastContact .telefono {
       margin: 0 15px 0 5px; }
     .fastContact .instagram {
-      margin: 0 15px 0 5px; } }
+      margin: 0 15px 0 5px; }
+  .menu {
+    position: absolute;
+    background-color: #6A0E0E; }
+    .menu .logo {
+      display: block;
+      width: auto;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-left: -30px; }
+    .menu .label {
+      display: block; }
+    .menu .menu_items {
+      background-color: #6A0E0E;
+      width: 100%;
+      left: -100%;
+      height: calc(90vh - 78px);
+      top: 60px;
+      margin: 0;
+      padding: 0;
+      position: absolute;
+      transition: all 0.4s;
+      flex-direction: column;
+      justify-content: space-around; }
+      .menu .menu_items li a {
+        margin-left: 10px;
+        padding: 30px; }
+      .menu .menu_items li:hover {
+        background-color: #9E2222; }
+    .menu #btn-menu:checked ~ .menu_items {
+      left: 0; } }
