@@ -46,8 +46,7 @@ header {
     display: none;
     padding: 10px; }
     .menu .label :hover {
-      cursor: pointer;
-      background-color: #9E2222; }
+      cursor: pointer; }
   .menu .menu_items {
     display: flex;
     list-style: none;
@@ -82,8 +81,9 @@ header {
       width: auto;
       width: 100%;
       display: flex;
-      justify-content: center;
-      margin-left: -30px; }
+      justify-content: center; }
+      .menu .logo img {
+        margin-left: -30px; }
     .menu .label {
       display: block; }
     .menu .menu_items {
@@ -91,7 +91,7 @@ header {
       width: 100%;
       left: -100%;
       height: calc(90vh - 78px);
-      top: 60px;
+      top: 55px;
       margin: 0;
       padding: 0;
       position: absolute;
