@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24.889" height="17.5" viewBox="0 0 24.889 17.5">
+  <g id="menu" transform="translate(0 -76)">
+    <g id="Grupo_2" data-name="Grupo 2" transform="translate(0 83.778)">
+      <g id="Grupo_1" data-name="Grupo 1">
+        <path id="Trazado_1" data-name="Trazado 1" d="M23.917,236H.972a.972.972,0,0,0,0,1.944H23.917a.972.972,0,0,0,0-1.944Z" transform="translate(0 -236)" fill="#fff"/>
+      </g>
+    </g>
+    <g id="Grupo_4" data-name="Grupo 4" transform="translate(0 76)">
+      <g id="Grupo_3" data-name="Grupo 3" transform="translate(0 0)">
+        <path id="Trazado_2" data-name="Trazado 2" d="M23.917,76H.972a.972.972,0,1,0,0,1.944H23.917a.972.972,0,1,0,0-1.944Z" transform="translate(0 -76)" fill="#fff"/>
+      </g>
+    </g>
+    <g id="Grupo_6" data-name="Grupo 6" transform="translate(0 91.556)">
+      <g id="Grupo_5" data-name="Grupo 5">
+        <path id="Trazado_3" data-name="Trazado 3" d="M23.917,396H.972a.972.972,0,0,0,0,1.944H23.917a.972.972,0,0,0,0-1.944Z" transform="translate(0 -396)" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>
