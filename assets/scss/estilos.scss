@@ -7,6 +7,7 @@
 $bcg-rojo: #6A0E0E;
 $bcg-blanco: #FFFFFF;
 $bcg-gris_claro: #F9F9F9;
+$bcg-gris_oscuro: #D5D3D3;
 $bcg-developed: #9E2222;
 $bcg-alNatural: #D2F2E1;
 $bcg-crema: #D87171;
@@ -29,11 +30,15 @@ body{
 
 header{
     background-color: $bcg-rojo;
+    width: 100%;
+}
+
+.logo_h1{
+    display: none;
 }
 
 // Contacto rapido
 .fastContact{
-    width: 100;
     color: $bcg-blanco;
     background-color: $bcg-rojo;
     padding: 3px;
@@ -58,58 +63,41 @@ header{
     }
 }
 
-.menu{
-    width: 100%;
-    display: flex;
-    // justify-content: space-between;
-    align-items: center;
-    // border-bottom: 1px $bcg-blanco solid;
-    box-shadow: 5px 0 10px rgba(0, 0, 0, .6);
 
-    .logo{
-        width: 5%;
-        display: flex;
-        justify-content: center;
-    }
-    .logo_h1{
-        display: none;
-    }
 
-    #btn-menu{
-        cursor: pointer;
-        display: none;
-    }
-    .label {
-        display: none;
-        padding: 10px;
-
-        :hover{
-            cursor: pointer;
-        }
-    }
-
-    .menu_items{
-        display: flex;
-        list-style: none;
-        width: 90%;
-        font-family: $poppins;
+.menu2{
+    background-color: $bcg-rojo;
+    .texto_menu{
         font-weight: 600;
         font-size: 18px;
-        
-        display: flex;
-        justify-content: space-between;
 
         li a {
-            text-decoration: none;
             color: $bcg-blanco;
-            display: block; //para que el link ocupe todo el lugar
         }
-    }
 
+    }
+    
+    .logoCell{
+        display: none;
+    }
+    .botonazo{
+        border-bottom: none;
+    }
 }
+
 
 // Celular
 @media screen and (max-width: 767px){
+    .logoCell{
+        background-color: $bcg-rojo;
+        div a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+    }
+
     .fastContact{
         font-size: 8px;
         img{
@@ -124,53 +112,118 @@ header{
         }
     }
     
-    .menu{
-        position: absolute;
-        background-color: $bcg-rojo;
+    .menu2{
+        .ella{
+            padding: 2px;
+        }
 
+        .logoCell{
+            display: inline-block;
+        }
         .logo{
-            display: block;
-            width: auto;
-            width: 100%;
+            display: none;
+        }
+        .texto_menu{
+            padding-top: 5px;
+        }        
+    }
 
+    .padreAcordeon{
+
+        .boton-acordion{
+            padding: 16px 20px;
+            font-size: 16px;
+            width: 100%;
             display: flex;
-            justify-content: center;
-
-            img{
-                margin-left: -30px;
+            justify-content: flex-start;
+            background-color: $bcg-gris_claro;
+            border: 0;
+            position: relative;
+    
+            .subdesplazar{
+                position: absolute;
+                left: 85%;
+                top: 50%;
             }
         }
-
-        .label{
-            display: block;
-        }
-
-        .menu_items{
-            background-color: $bcg-rojo;
-            width: 100%;
-            left: -100%;
-            height: calc(90vh - 78px); //1473 completo con algo abierto
-            top: 55px;
-            margin: 0;
-            padding: 0;
-            position: absolute;
-            transition: all 0.4s;
-
-            flex-direction: column;
-            justify-content: space-around;
-
-            li a {
-                margin-left: 10px;
-                padding: 30px;
-            }
-
-            li:hover{
-                background-color: $bcg-developed;
-            }
-        }
-
-        #btn-menu:checked ~ .menu_items {
-            left: 0;
+        .cuerpoAcordeon{
+            display: flex;
+            flex-wrap: wrap;
         }
     }
+
+    .nav-item_menu{
+        margin-left: 10px;
+    }
+}
+
+// PC
+@media screen and (min-width: 768px){
+    .logoCell{
+        display: none;
+    }
+
+    // al pasar el mouse se desprende los productos
+    .menu_items li .children {
+        display: none;
+        list-style: none;
+        text-decoration: none;
+        background-color: $bcg-gris_oscuro;
+        position: absolute;
+        // top: 45px;
+        width: 200%;
+        z-index: 1000;
+
+        li a {
+            color: $color-black;
+        }
+    }
+    .menu_items li:hover .children {
+        display: block;
+
+        li{
+            display: block;
+            overflow: hidden;
+
+            a {
+                display: block;
+
+                img{
+                    float: right;
+                    position: relative;
+                    top: 8px;
+                    right: 20px;
+                }
+            }
+        }
+
+        :hover{
+            background-color: $bcg-gris_claro;
+        }
+    }
+
+
+    // menu2
+    .menu2{
+        .conjunto{
+            display: none;
+        }
+    }
+}
+
+
+.bordes{
+    border: $border-test;
+}
+
+// testeo
+
+.dos{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tres_2{
+    height: auto;
+    color: blue;   
 }

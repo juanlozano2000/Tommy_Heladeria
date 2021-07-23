@@ -5,10 +5,13 @@ body {
   box-sizing: border-box; }
 
 header {
-  background-color: #6A0E0E; }
+  background-color: #6A0E0E;
+  width: 100%; }
+
+.logo_h1 {
+  display: none; }
 
 .fastContact {
-  width: 100;
   color: #FFFFFF;
   background-color: #6A0E0E;
   padding: 3px;
@@ -28,40 +31,25 @@ header {
     text-decoration: none;
     color: #FFFFFF; }
 
-.menu {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  box-shadow: 5px 0 10px rgba(0, 0, 0, 0.6); }
-  .menu .logo {
-    width: 5%;
-    display: flex;
-    justify-content: center; }
-  .menu .logo_h1 {
-    display: none; }
-  .menu #btn-menu {
-    cursor: pointer;
-    display: none; }
-  .menu .label {
-    display: none;
-    padding: 10px; }
-    .menu .label :hover {
-      cursor: pointer; }
-  .menu .menu_items {
-    display: flex;
-    list-style: none;
-    width: 90%;
-    font-family: "Poppins", sans-serif;
+.menu2 {
+  background-color: #6A0E0E; }
+  .menu2 .texto_menu {
     font-weight: 600;
-    font-size: 18px;
-    display: flex;
-    justify-content: space-between; }
-    .menu .menu_items li a {
-      text-decoration: none;
-      color: #FFFFFF;
-      display: block; }
+    font-size: 18px; }
+    .menu2 .texto_menu li a {
+      color: #FFFFFF; }
+  .menu2 .logoCell {
+    display: none; }
+  .menu2 .botonazo {
+    border-bottom: none; }
 
 @media screen and (max-width: 767px) {
+  .logoCell {
+    background-color: #6A0E0E; }
+    .logoCell div a {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
   .fastContact {
     font-size: 8px; }
     .fastContact img {
@@ -73,35 +61,70 @@ header {
       margin: 0 15px 0 5px; }
     .fastContact .instagram {
       margin: 0 15px 0 5px; }
-  .menu {
-    position: absolute;
-    background-color: #6A0E0E; }
-    .menu .logo {
-      display: block;
-      width: auto;
-      width: 100%;
-      display: flex;
-      justify-content: center; }
-      .menu .logo img {
-        margin-left: -30px; }
-    .menu .label {
-      display: block; }
-    .menu .menu_items {
-      background-color: #6A0E0E;
-      width: 100%;
-      left: -100%;
-      height: calc(90vh - 78px);
-      top: 55px;
-      margin: 0;
-      padding: 0;
+  .menu2 .ella {
+    padding: 2px; }
+  .menu2 .logoCell {
+    display: inline-block; }
+  .menu2 .logo {
+    display: none; }
+  .menu2 .texto_menu {
+    padding-top: 5px; }
+  .padreAcordeon .boton-acordion {
+    padding: 16px 20px;
+    font-size: 16px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    background-color: #F9F9F9;
+    border: 0;
+    position: relative; }
+    .padreAcordeon .boton-acordion .subdesplazar {
       position: absolute;
-      transition: all 0.4s;
-      flex-direction: column;
-      justify-content: space-around; }
-      .menu .menu_items li a {
-        margin-left: 10px;
-        padding: 30px; }
-      .menu .menu_items li:hover {
-        background-color: #9E2222; }
-    .menu #btn-menu:checked ~ .menu_items {
-      left: 0; } }
+      left: 85%;
+      top: 50%; }
+  .padreAcordeon .cuerpoAcordeon {
+    display: flex;
+    flex-wrap: wrap; }
+  .nav-item_menu {
+    margin-left: 10px; } }
+
+@media screen and (min-width: 768px) {
+  .logoCell {
+    display: none; }
+  .menu_items li .children {
+    display: none;
+    list-style: none;
+    text-decoration: none;
+    background-color: #D5D3D3;
+    position: absolute;
+    width: 200%;
+    z-index: 1000; }
+    .menu_items li .children li a {
+      color: #000000; }
+  .menu_items li:hover .children {
+    display: block; }
+    .menu_items li:hover .children li {
+      display: block;
+      overflow: hidden; }
+      .menu_items li:hover .children li a {
+        display: block; }
+        .menu_items li:hover .children li a img {
+          float: right;
+          position: relative;
+          top: 8px;
+          right: 20px; }
+    .menu_items li:hover .children :hover {
+      background-color: #F9F9F9; }
+  .menu2 .conjunto {
+    display: none; } }
+
+.bordes {
+  border: solid 1px red; }
+
+.dos {
+  display: flex;
+  flex-wrap: wrap; }
+
+.tres_2 {
+  height: auto;
+  color: blue; }
