@@ -155,6 +155,12 @@ header{
             font-size: 1rem;
             font-weight: 400;
         }
+
+        .poppinaso{
+            font-family: $poppins;
+            font-size: 0.8rem;
+            font-weight: 400;
+        }
     }
 
     .nav-item_menu{
@@ -220,6 +226,7 @@ header{
 .bordes{
     border: $border-test;
 }
+
 
 // testeo
 

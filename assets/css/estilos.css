@@ -89,6 +89,10 @@ header {
   .padreAcordeon #body_acordeon-text {
     font-size: 1rem;
     font-weight: 400; }
+  .padreAcordeon .poppinaso {
+    font-family: "Poppins", sans-serif;
+    font-size: 0.8rem;
+    font-weight: 400; }
   .nav-item_menu {
     margin-left: 10px; } }
 
