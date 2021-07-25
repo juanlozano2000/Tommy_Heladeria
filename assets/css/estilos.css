@@ -72,6 +72,7 @@ header {
   .padreAcordeon .boton-acordion {
     padding: 16px 20px;
     font-size: 16px;
+    font-family: "Poppins", sans-serif;
     width: 100%;
     display: flex;
     justify-content: flex-start;
@@ -85,6 +86,9 @@ header {
   .padreAcordeon .cuerpoAcordeon {
     display: flex;
     flex-wrap: wrap; }
+  .padreAcordeon #body_acordeon-text {
+    font-size: 1rem;
+    font-weight: 400; }
   .nav-item_menu {
     margin-left: 10px; } }
 
