@@ -27,8 +27,6 @@
       left: 10px; }
     .carousel .carousel__contenedor .carousel__siguiente {
       right: 10px; }
-    .carousel .carousel__contenedor .carousel__lista {
-      overflow: hidden; }
     .carousel .carousel__contenedor .carousel__elemento {
       text-align: center;
       margin: 5px;
