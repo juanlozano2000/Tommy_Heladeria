@@ -1,0 +1,79 @@
+$bcg-rojo: #6A0E0E;
+$bcg-blanco: #FFFFFF;
+$bcg-gris_claro: #F9F9F9;
+$bcg-gris_oscuro: #D5D3D3;
+$bcg-developed: #9E2222;
+$bcg-alNatural: #D2F2E1;
+$bcg-crema: #D87171;
+$bcg-chocolate: #A7796D;
+$bcg-ddl: #BE8945;
+$bcg-especiales: #F3CAEB;
+$color-black: #000000;
+$color-crema: #D87171;
+
+$poppins: 'Poppins', sans-serif;
+
+$border-test: solid 1px red;
+
+
+
+.carousel{
+    background-color: $bcg-gris_oscuro;
+    padding: 4px;
+
+    .h3_texto{
+        margin: 15px 0 15px 0;
+        font-size: 1.375rem;
+        font-weight: 500;
+        letter-spacing: 2px;
+        a{
+            margin-left: 5px;
+            font-size: .85rem;
+            text-decoration: none;
+            color: $color-black;
+        }
+    }
+
+    .carousel__contenedor{
+        position: relative;
+    
+        .carousel__anterior, .carousel__siguiente{
+            position: absolute;
+            display: block;
+            border: none;
+            cursor: pointer;
+            top: 40%;
+            line-height: 30px;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.05);
+        }
+        .carousel__anterior{
+            z-index: 100;
+            left: 10px;
+        }
+        .carousel__siguiente{
+            right: 10px;
+        }
+        .carousel__lista{
+            overflow: hidden;
+        }
+        .carousel__elemento{
+            text-align: center;
+            margin: 5px;
+            background-color: $bcg-blanco;
+            border-radius: 20px;
+        }
+        .parrafo_carousel{
+            margin-top: 5px;
+            font-size: 1.125rem;
+            font-weight: 500;
+            letter-spacing: 1px;
+        }
+        .sector_cremas{
+            color: $color-crema;
+            font-weight: 650;
+            font-size: 1.25rem;
+            letter-spacing: 2px;
+        }
+    }
+}

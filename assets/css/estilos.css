@@ -1,3 +1,50 @@
+.carousel {
+  background-color: #D5D3D3;
+  padding: 4px; }
+  .carousel .h3_texto {
+    margin: 15px 0 15px 0;
+    font-size: 1.375rem;
+    font-weight: 500;
+    letter-spacing: 2px; }
+    .carousel .h3_texto a {
+      margin-left: 5px;
+      font-size: .85rem;
+      text-decoration: none;
+      color: #000000; }
+  .carousel .carousel__contenedor {
+    position: relative; }
+    .carousel .carousel__contenedor .carousel__anterior, .carousel .carousel__contenedor .carousel__siguiente {
+      position: absolute;
+      display: block;
+      border: none;
+      cursor: pointer;
+      top: 40%;
+      line-height: 30px;
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.05); }
+    .carousel .carousel__contenedor .carousel__anterior {
+      z-index: 100;
+      left: 10px; }
+    .carousel .carousel__contenedor .carousel__siguiente {
+      right: 10px; }
+    .carousel .carousel__contenedor .carousel__lista {
+      overflow: hidden; }
+    .carousel .carousel__contenedor .carousel__elemento {
+      text-align: center;
+      margin: 5px;
+      background-color: #FFFFFF;
+      border-radius: 20px; }
+    .carousel .carousel__contenedor .parrafo_carousel {
+      margin-top: 5px;
+      font-size: 1.125rem;
+      font-weight: 500;
+      letter-spacing: 1px; }
+    .carousel .carousel__contenedor .sector_cremas {
+      color: #D87171;
+      font-weight: 650;
+      font-size: 1.25rem;
+      letter-spacing: 2px; }
+
 body {
   margin: 0;
   padding: 0;
@@ -138,6 +185,7 @@ header {
   .menu2 .conjunto {
     display: none; }
   .padre_productosPC {
+    z-index: 1000;
     height: auto;
     width: 824px;
     background-color: #D5D3D3; }
