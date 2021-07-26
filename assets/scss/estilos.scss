@@ -55,12 +55,10 @@ header{
             margin: 0 30px 0 10px;
         }
     }
-
-
-    .linkeo{
-        text-decoration: none;
-        color: $bcg-blanco;
-    }
+}
+.linkeo{
+    text-decoration: none;
+    color: $bcg-blanco;
 }
 
 
@@ -81,6 +79,46 @@ header{
     }
     .botonazo{
         border-bottom: none;
+    }
+}
+
+footer{
+    background-color: $bcg-rojo;
+    height: 200px;
+
+    .lista{
+        text-decoration: none;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    
+        :hover{
+            color: $bcg-blanco;
+        }
+    }
+}
+.developedBy{
+    background-color: $bcg-developed;
+    color: $bcg-blanco;
+    display: flex;
+    justify-content: center;
+}
+
+.boton-acordion{
+    padding: 16px 20px;
+    font-size: 16px;
+    font-family: $poppins;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    background-color: $bcg-gris_claro;
+    border: 0;
+    position: relative;
+
+    .subdesplazar{
+        position: absolute;
+        left: 85%;
+        top: 50%;
     }
 }
 
@@ -178,46 +216,6 @@ header{
         display: none;
     }
 
-    // al pasar el mouse se desprende los productos
-    .menu_items li .children {
-        display: none;
-        list-style: none;
-        text-decoration: none;
-        background-color: $bcg-gris_oscuro;
-        position: absolute;
-        // top: 45px;
-        width: 200%;
-        z-index: 1000;
-
-        li a {
-            color: $color-black;
-        }
-    }
-    .menu_items li:hover .children {
-        display: block;
-
-        li{
-            display: block;
-            overflow: hidden;
-
-            a {
-                display: block;
-
-                img{
-                    float: right;
-                    position: relative;
-                    top: 8px;
-                    right: 20px;
-                }
-            }
-        }
-
-        :hover{
-            background-color: $bcg-gris_claro;
-        }
-    }
-
-
     // menu2
     .menu2{
         .conjunto{
@@ -294,24 +292,5 @@ header{
     border: $border-test;
 }
 
-
-
-.boton-acordion{
-    padding: 16px 20px;
-    font-size: 16px;
-    font-family: $poppins;
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
-    background-color: $bcg-gris_claro;
-    border: 0;
-    position: relative;
-
-    .subdesplazar{
-        position: absolute;
-        left: 85%;
-        top: 50%;
-    }
-}
 
 
