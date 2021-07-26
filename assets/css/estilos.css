@@ -69,6 +69,8 @@ header {
     display: none; }
   .menu2 .texto_menu {
     padding-top: 5px; }
+  .padre_productosPC {
+    display: none; }
   .padreAcordeon .boton-acordion {
     padding: 16px 20px;
     font-size: 16px;
@@ -124,18 +126,38 @@ header {
     .menu_items li:hover .children :hover {
       background-color: #F9F9F9; }
   .menu2 .conjunto {
-    display: none; } }
-
-.bordes {
-  border: solid 1px red; }
-
-.dos {
-  display: flex;
-  flex-wrap: wrap; }
-
-.tres_2 {
-  height: auto;
-  color: blue; }
+    display: none; }
+  .padre_productosPC {
+    height: auto;
+    width: 824px;
+    background-color: #D5D3D3; }
+    .padre_productosPC .h2_PC {
+      font-size: 1.25rem;
+      font-family: "Poppins", sans-serif;
+      letter-spacing: 3px;
+      font-weight: 500; }
+    .padre_productosPC .titulos_h2 {
+      width: 100%;
+      display: flex;
+      justify-content: space-around; }
+    .padre_productosPC .barrio {
+      width: 50%; }
+    .padre_productosPC .productos_hover {
+      position: relative; }
+      .padre_productosPC .productos_hover .padre_productosPC {
+        display: none; }
+  .productos_hover {
+    position: relative; }
+  .padre_productosPC {
+    display: none; }
+  .productos_hover:hover .padre_productosPC {
+    display: inline-block;
+    position: absolute;
+    top: 48px; }
+  .poppinaso {
+    font-family: "Poppins", sans-serif;
+    font-size: 0.8rem;
+    font-weight: 400; } }
 
 .tachado {
   text-decoration: line-through; }
@@ -144,3 +166,21 @@ header {
   text-decoration: none;
   color: black;
   font-size: 12px; }
+
+.bordes {
+  border: solid 1px red; }
+
+.boton-acordion {
+  padding: 16px 20px;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  background-color: #F9F9F9;
+  border: 0;
+  position: relative; }
+  .boton-acordion .subdesplazar {
+    position: absolute;
+    left: 85%;
+    top: 50%; }

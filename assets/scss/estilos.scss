@@ -127,6 +127,10 @@ header{
         }        
     }
 
+    .padre_productosPC{
+        display: none;
+    }
+
     .padreAcordeon{
 
         .boton-acordion{
@@ -220,32 +224,94 @@ header{
             display: none;
         }
     }
+
+    .padre_productosPC{
+        height: auto;
+        width: 824px;
+        background-color: $bcg-gris_oscuro;
+
+        .h2_PC{
+            font-size: 1.25rem;
+            font-family: $poppins;
+            letter-spacing: 3px;
+            font-weight: 500;
+        }
+
+        .titulos_h2{
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .barrio{
+            width: 50%;
+        }
+
+        .productos_hover{
+            position: relative;
+
+            .padre_productosPC{
+                display: none;
+            }
+        }
+    }
+    .productos_hover{
+        position: relative;
+    }
+    
+    .padre_productosPC{
+        display: none;
+    }
+    
+    .productos_hover:hover{
+        .padre_productosPC{
+            display: inline-block;
+            position: absolute;
+            top: 48px;
+        }
+    }
+    
+    .poppinaso{
+        font-family: $poppins;
+        font-size: 0.8rem;
+        font-weight: 400;
+    }
 }
 
+
+.tachado{
+    text-decoration: line-through;
+}
+#linkeo2{
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+}
+
+// testeo
 // Para ver los bordes
 .bordes{
     border: $border-test;
 }
 
 
-// testeo
 
-.dos{
+.boton-acordion{
+    padding: 16px 20px;
+    font-size: 16px;
+    font-family: $poppins;
+    width: 100%;
     display: flex;
-    flex-wrap: wrap;
+    justify-content: flex-start;
+    background-color: $bcg-gris_claro;
+    border: 0;
+    position: relative;
+
+    .subdesplazar{
+        position: absolute;
+        left: 85%;
+        top: 50%;
+    }
 }
 
-.tres_2{
-    height: auto;
-    color: blue;   
-}
 
-.tachado{
-    text-decoration: line-through;
-}
-
-#linkeo2{
-    text-decoration: none;
-    color: black;
-    font-size: 12px;
-}
