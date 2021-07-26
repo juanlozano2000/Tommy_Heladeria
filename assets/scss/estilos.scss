@@ -82,21 +82,7 @@ header{
     }
 }
 
-footer{
-    background-color: $bcg-rojo;
-    height: 200px;
 
-    .lista{
-        text-decoration: none;
-        list-style: none;
-        margin: 0;
-        padding: 0;
-    
-        :hover{
-            color: $bcg-blanco;
-        }
-    }
-}
 .developedBy{
     background-color: $bcg-developed;
     color: $bcg-blanco;
@@ -208,6 +194,25 @@ footer{
     .nav-item_menu{
         margin-left: 10px;
     }
+
+    .footer_pc{
+        display: none;
+    }
+    .footer_cell{
+        background-color: $bcg-rojo;
+        height: 400px;
+    
+        .lista{
+            text-decoration: none;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        
+            :hover{
+                color: $bcg-blanco;
+            }
+        }
+    }
 }
 
 // PC
@@ -273,6 +278,25 @@ footer{
         font-family: $poppins;
         font-size: 0.8rem;
         font-weight: 400;
+    }
+
+    .footer_pc{
+        background-color: $bcg-rojo;
+        height: 200px;
+    
+        .lista{
+            text-decoration: none;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        
+            :hover{
+                color: $bcg-blanco;
+            }
+        }
+    }
+    .footer_cell{
+        display: none;
     }
 }
 
