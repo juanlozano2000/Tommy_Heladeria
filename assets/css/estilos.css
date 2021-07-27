@@ -1,19 +1,19 @@
-.carousel {
+.carousel_productos {
   background-color: #D5D3D3;
   padding: 4px; }
-  .carousel .h3_texto {
+  .carousel_productos .h3_texto {
     margin: 15px 0 15px 0;
-    font-size: 1.375rem;
+    font-size: 1.2rem;
     font-weight: 500;
     letter-spacing: 2px; }
-    .carousel .h3_texto a {
+    .carousel_productos .h3_texto a {
       margin-left: 5px;
-      font-size: .85rem;
+      font-size: .70rem;
       text-decoration: none;
       color: #000000; }
-  .carousel .carousel__contenedor {
+  .carousel_productos .carousel__contenedor {
     position: relative; }
-    .carousel .carousel__contenedor .carousel__anterior, .carousel .carousel__contenedor .carousel__siguiente {
+    .carousel_productos .carousel__contenedor .carousel__anterior, .carousel_productos .carousel__contenedor .carousel__siguiente {
       position: absolute;
       display: block;
       border: none;
@@ -22,26 +22,38 @@
       line-height: 30px;
       text-align: center;
       background-color: rgba(255, 255, 255, 0.05); }
-    .carousel .carousel__contenedor .carousel__anterior {
+    .carousel_productos .carousel__contenedor .carousel__anterior {
       z-index: 100;
       left: 10px; }
-    .carousel .carousel__contenedor .carousel__siguiente {
+    .carousel_productos .carousel__contenedor .carousel__siguiente {
       right: 10px; }
-    .carousel .carousel__contenedor .carousel__elemento {
+    .carousel_productos .carousel__contenedor .carousel__elemento {
       text-align: center;
       margin: 5px;
       background-color: #FFFFFF;
       border-radius: 20px; }
-    .carousel .carousel__contenedor .parrafo_carousel {
+    .carousel_productos .carousel__contenedor .parrafo_carousel {
       margin-top: 5px;
       font-size: 1.125rem;
       font-weight: 500;
       letter-spacing: 1px; }
-    .carousel .carousel__contenedor .sector_cremas {
+    .carousel_productos .carousel__contenedor .sector_cremas {
       color: #D87171;
       font-weight: 650;
       font-size: 1.25rem;
       letter-spacing: 2px; }
+
+@media screen and (max-width: 767px) {
+  .carousel_promos_CELL {
+    background-color: #F9F9F9; }
+  .carousel_promos_PC {
+    display: none; } }
+
+@media screen and (min-width: 768px) {
+  .carousel_promos_PC {
+    background-color: #F9F9F9; }
+  .carousel_promos_CELL {
+    display: none; } }
 
 body {
   margin: 0;

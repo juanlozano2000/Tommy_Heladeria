@@ -16,19 +16,23 @@ $poppins: 'Poppins', sans-serif;
 $border-test: solid 1px red;
 
 
+// carousel de promos
 
-.carousel{
+
+
+// Carousel de productos
+.carousel_productos{
     background-color: $bcg-gris_oscuro;
     padding: 4px;
 
     .h3_texto{
         margin: 15px 0 15px 0;
-        font-size: 1.375rem;
+        font-size: 1.2rem;
         font-weight: 500;
         letter-spacing: 2px;
         a{
             margin-left: 5px;
-            font-size: .85rem;
+            font-size: .70rem;
             text-decoration: none;
             color: $color-black;
         }
@@ -75,5 +79,25 @@ $border-test: solid 1px red;
             font-size: 1.25rem;
             letter-spacing: 2px;
         }
+    }
+}
+
+// CELL
+@media screen and (max-width: 767px){
+    .carousel_promos_CELL{
+        background-color: $bcg-gris_claro;
+    }
+    .carousel_promos_PC{
+        display: none;
+    }
+}
+
+// PC
+@media screen and (min-width: 768px){
+    .carousel_promos_PC{
+        background-color: $bcg-gris_claro;
+    }
+    .carousel_promos_CELL{
+        display: none;
     }
 }
