@@ -2,8 +2,9 @@ $bcg-rojo: #6A0E0E;
 $bcg-blanco: #FFFFFF;
 $bcg-gris_claro: #F9F9F9;
 $bcg-gris_oscuro: #D5D3D3;
+$bcg-de-carousel: #f1ecec;
 $bcg-developed: #9E2222;
-$bcg-alNatural: #D2F2E1;
+$bcg-alNatural: #b0e6c9;
 $bcg-crema: #D87171;
 $bcg-chocolate: #A7796D;
 $bcg-ddl: #BE8945;
@@ -16,27 +17,10 @@ $poppins: 'Poppins', sans-serif;
 $border-test: solid 1px red;
 
 
-// carousel de promos
-
-
-
 // Carousel de productos
 .carousel_productos{
-    background-color: $bcg-gris_oscuro;
+    background-color:$bcg-de-carousel;
     padding: 4px;
-
-    .h3_texto{
-        margin: 15px 0 15px 0;
-        font-size: 1.2rem;
-        font-weight: 500;
-        letter-spacing: 2px;
-        a{
-            margin-left: 5px;
-            font-size: .70rem;
-            text-decoration: none;
-            color: $color-black;
-        }
-    }
 
     .carousel__contenedor{
         position: relative;
@@ -58,9 +42,7 @@ $border-test: solid 1px red;
         .carousel__siguiente{
             right: 10px;
         }
-        // .carousel__lista{
-        //     // overflow: hidden;
-        // }
+    
         .carousel__elemento{
             text-align: center;
             margin: 5px;
@@ -80,6 +62,130 @@ $border-test: solid 1px red;
             letter-spacing: 2px;
         }
     }
+}
+
+.h3_texto{
+    margin: 15px 0 15px 0;
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    a{
+        margin-left: 5px;
+        font-size: .70rem;
+        text-decoration: none;
+        color: $color-black;
+    }
+}
+
+.carousel_sabores{
+    #box_carousel{
+        background-color: $bcg-de-carousel;
+    }
+
+    .carousel__contenedor2{
+        position: relative;
+    
+        .carousel__anterior2, .carousel__siguiente2{
+            position: absolute;
+            display: block;
+            border: none;
+            cursor: pointer;
+            top: 40%;
+            line-height: 30px;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.05);
+        }
+        .carousel__anterior2{
+            z-index: 100;
+            left: 10px;
+        }
+        .carousel__siguiente2{
+            right: 10px;
+        }
+    
+        .carousel__elemento{
+            text-align: center;
+            margin: 5px;
+            background-color: $bcg-blanco;
+            border-radius: 20px;
+        }
+        .parrafo_carousel{
+            margin-top: 5px;
+            font-size: 1.125rem;
+            font-weight: 500;
+            letter-spacing: 1px;
+        }
+        .sector_cremas{
+            color: $color-crema;
+            font-weight: 650;
+            font-size: 1.25rem;
+            letter-spacing: 2px;
+        }
+    }
+}
+
+.globo_comentario{
+    position: relative;
+
+    .opinion_larga{
+        font-family: $poppins;
+        font-size: 0.813rem;
+        position: absolute;
+        width: 80%;
+        top: 5%;
+        left: 10%;
+    }
+    .opinion_corta{
+        font-family: $poppins;
+        font-size: 1.063rem;
+        position: absolute;
+        width: 80%;
+        top: 10%;
+        left: 10%;
+    }
+    .firma{
+        position: absolute;
+        font-family: $poppins;
+        font-weight: 600;
+        font-size: 1.125rem;
+        top: 70%;
+        left: 45%;
+    }
+    .firma_larga{
+        position: absolute;
+        font-family: $poppins;
+        font-weight: 600;
+        font-size: 1.125rem;
+        top: 70%;
+        left: 40%;
+    }
+}
+
+.boton_mas{
+    background-color: $bcg-rojo;
+    border: none;
+    border-radius: 50px;
+    color: $bcg-blanco;
+    font-family: $poppins;
+    padding: 5px 30px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    box-shadow: 5px 5px 5px gray;
+}
+.boton_mas:hover{
+    background-color: $bcg-developed;
+}
+
+.historia_inicio{
+    background-color: $bcg-de-carousel;
+}
+
+.h4_texto{
+    font-family: $poppins;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 450;
+    color: $color-black;
 }
 
 // CELL

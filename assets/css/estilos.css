@@ -1,16 +1,6 @@
 .carousel_productos {
-  background-color: #D5D3D3;
+  background-color: #f1ecec;
   padding: 4px; }
-  .carousel_productos .h3_texto {
-    margin: 15px 0 15px 0;
-    font-size: 1.2rem;
-    font-weight: 500;
-    letter-spacing: 2px; }
-    .carousel_productos .h3_texto a {
-      margin-left: 5px;
-      font-size: .70rem;
-      text-decoration: none;
-      color: #000000; }
   .carousel_productos .carousel__contenedor {
     position: relative; }
     .carousel_productos .carousel__contenedor .carousel__anterior, .carousel_productos .carousel__contenedor .carousel__siguiente {
@@ -43,6 +33,107 @@
       font-size: 1.25rem;
       letter-spacing: 2px; }
 
+.h3_texto {
+  margin: 15px 0 15px 0;
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 2px; }
+  .h3_texto a {
+    margin-left: 5px;
+    font-size: .70rem;
+    text-decoration: none;
+    color: #000000; }
+
+.carousel_sabores #box_carousel {
+  background-color: #f1ecec; }
+
+.carousel_sabores .carousel__contenedor2 {
+  position: relative; }
+  .carousel_sabores .carousel__contenedor2 .carousel__anterior2, .carousel_sabores .carousel__contenedor2 .carousel__siguiente2 {
+    position: absolute;
+    display: block;
+    border: none;
+    cursor: pointer;
+    top: 40%;
+    line-height: 30px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.05); }
+  .carousel_sabores .carousel__contenedor2 .carousel__anterior2 {
+    z-index: 100;
+    left: 10px; }
+  .carousel_sabores .carousel__contenedor2 .carousel__siguiente2 {
+    right: 10px; }
+  .carousel_sabores .carousel__contenedor2 .carousel__elemento {
+    text-align: center;
+    margin: 5px;
+    background-color: #FFFFFF;
+    border-radius: 20px; }
+  .carousel_sabores .carousel__contenedor2 .parrafo_carousel {
+    margin-top: 5px;
+    font-size: 1.125rem;
+    font-weight: 500;
+    letter-spacing: 1px; }
+  .carousel_sabores .carousel__contenedor2 .sector_cremas {
+    color: #D87171;
+    font-weight: 650;
+    font-size: 1.25rem;
+    letter-spacing: 2px; }
+
+.globo_comentario {
+  position: relative; }
+  .globo_comentario .opinion_larga {
+    font-family: "Poppins", sans-serif;
+    font-size: 0.813rem;
+    position: absolute;
+    width: 80%;
+    top: 5%;
+    left: 10%; }
+  .globo_comentario .opinion_corta {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.063rem;
+    position: absolute;
+    width: 80%;
+    top: 10%;
+    left: 10%; }
+  .globo_comentario .firma {
+    position: absolute;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 1.125rem;
+    top: 70%;
+    left: 45%; }
+  .globo_comentario .firma_larga {
+    position: absolute;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 1.125rem;
+    top: 70%;
+    left: 40%; }
+
+.boton_mas {
+  background-color: #6A0E0E;
+  border: none;
+  border-radius: 50px;
+  color: #FFFFFF;
+  font-family: "Poppins", sans-serif;
+  padding: 5px 30px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  box-shadow: 5px 5px 5px gray; }
+
+.boton_mas:hover {
+  background-color: #9E2222; }
+
+.historia_inicio {
+  background-color: #f1ecec; }
+
+.h4_texto {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-weight: 450;
+  color: #000000; }
+
 @media screen and (max-width: 767px) {
   .carousel_promos_CELL {
     background-color: #F9F9F9; }
@@ -74,7 +165,7 @@ header {
   padding: 3px;
   font-family: "Poppins", sans-serif;
   font-weight: 300;
-  font-size: 12px;
+  font-size: 14px;
   position: relative;
   display: flex;
   justify-content: flex-end; }
