@@ -146,6 +146,60 @@
   .carousel_promos_CELL {
     display: none; } }
 
+.sabores_padre {
+  background-color: #f1ecec; }
+
+.bcg_white {
+  background-color: #F9F9F9; }
+
+.poppinaso_productos {
+  font-size: 1rem; }
+
+.al_natural {
+  background-color: #D2F2E1; }
+
+.al_crema {
+  background-color: #D87171; }
+
+.al_chocolate {
+  background-color: #A7796D; }
+
+.al_ddl {
+  background-color: #BE8945; }
+
+.al_especial {
+  background-color: #F3CAEB; }
+
+.al_natural {
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 3px;
+  font-size: 1.75rem;
+  padding: 5px; }
+
+.al_crema {
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 3px;
+  font-size: 1.75rem;
+  padding: 5px; }
+
+.al_chocolate {
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 3px;
+  font-size: 1.75rem;
+  padding: 5px; }
+
+.al_ddl {
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 3px;
+  font-size: 1.75rem;
+  padding: 5px; }
+
+.al_especial {
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 3px;
+  font-size: 1.75rem;
+  padding: 5px; }
+
 body {
   margin: 0;
   padding: 0;
@@ -312,7 +366,7 @@ header {
   .productos_hover:hover .padre_productosPC {
     display: inline-block;
     position: absolute;
-    top: 48px; }
+    top: 40px; }
   .poppinaso {
     font-family: "Poppins", sans-serif;
     font-size: 0.8rem;

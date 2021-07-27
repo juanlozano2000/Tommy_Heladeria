@@ -5,11 +5,689 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="icon" href="img/logo.svg">
+    <link rel="stylesheet" href="../assets/css/estilos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.7/glider.min.css"> <!-- Glider -->
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="../assets/app.js" defer></script>
 
     <title>Productos | Tommy Heladeria</title>
 </head>
 <body>
-    
+<div class="container-fluid">
+    <!-- fast contact -->
+    <div class="row">
+        <!-- Contacto rapido -->
+        <div class="fastContact">
+            <img src="../img/whatsapp.svg" alt="wpp.jpg">
+                <a class="linkeo" href="https://api.whatsapp.com/message/G5ZGZK5IF45RG1" target="_blank">
+                    <div class="celu">11-3309-5058</div>
+                </a>
+            </img>
+            <img src="../img/telefono.svg" alt="telefono.svg">
+                <a class="linkeo" href="tel:46043240">
+                    <div class="telefono">4604-3240</div>
+                </a>
+            </img>
+            <img src="../img/Instagram.svg" alt="instagram.svg">
+                <a class="linkeo" href="https://www.instagram.com/heladeria_tommy/?hl=es-la" target="_blank">
+                    <div class="instagram">@heladeria_tommy</div>
+                </a>
+            </img>
+        </div>
+    </div>
+
+    <!-- logo Cell -->
+    <div class="row logoCell">
+        <div >
+            <a href="../index.html"><img src="../img/logo.svg" alt="logo.svg"></div></a>
+    </div>
+
+    <!-- Menu -->
+    <div class="row">
+        <!-- MENU y combinacion de logo -->
+        <div class="col-md-12 menu2"> 
+            <nav class="navbar navbar-expand-lg">
+                
+                <div class="container-fluid ella">
+                    
+                    <!-- Logo pc -->
+                    <div class="logo"><a href="../index.html"><img src="../img/logo.svg" alt="logo.svg"></a></div>
+                    <h1 class="logo_h1">Tommy Heladeria</h1>               
+                    
+                    <button class="navbar-toggler botonazo" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span> <img src="../img/menu.svg" alt=""></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-around w-100 texto_menu">
+                            <li class="nav-item nav-item_menu">
+                                <a class="nav-link active" aria-current="page" href="../index.html">INICIO</a>
+                            </li>
+                            <li class="nav-item nav-item_menu productos_hover">
+                                <a class="nav-link productos_hover" href="">PRODUCTOS</a>
+
+                                <!-- Acordeon -- CELULAR -->
+                                <div class="accordion accordion-flush conjunto col-12" id="accordionFlushExample">
+                                    <!-- Opcion 1 -->
+                                    <div class="accordion-item padreAcordeon col-12">
+                                    
+                                        <h2 class="accordion-header col-12" id="flush-headingOne">
+                                            <button class="boton-acordion collapsed col-12" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                                NUESTROS PRODUCTOS
+                                                <img class="subdesplazar" src="../img/Grupo 243.svg" alt="">
+                                            </button>
+                                        </h2>
+
+                                        <div id="flush-collapseOne" class="accordion-collapse collapse col-12" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                            <!-- Caja principal o body -->
+                                            <div class="accordion-body col-12" id="body_acordeon-text">
+                                                <div class="row">
+                                                    <div class="col-4 d-flex justify-content-start flex-column align-items-center">
+                                                        <img src="../img/Grupo 19.png" alt="">
+                                                        <p class="text-center poppinaso">Bombon escoces</p>
+                                                    </div>
+                                                    <div class="col-4 d-flex justify-content-start flex-column align-items-center">
+                                                        <img src="../img/Grupo 19.png" alt="">
+                                                        <p class="text-center poppinaso">Trihelado</p>
+                                                    </div>
+                                                    <div class="col-4 d-flex justify-content-start flex-column align-items-center">
+                                                        <img src="../img/Grupo 19.png" alt="">
+                                                        <p class="text-center poppinaso">Bombon suizo</p>
+                                                    </div>
+                                                    <div class="col-4 d-flex justify-content-start flex-column align-items-center">
+                                                        <img src="../img/Grupo 19.png" alt="">
+                                                        <p class="text-center poppinaso">Almendrado</p>
+                                                    </div>
+                                                    <div class="col-4 d-flex justify-content-start flex-column align-items-center">
+                                                        <img src="../img/Grupo 19.png" alt="">
+                                                        <p class="text-center poppinaso">Vasitos</p>
+                                                    </div>
+                                                    <div class="col-4 d-flex justify-content-start flex-column align-items-center">
+                                                        <img src="../img/Grupo 19.png" alt="">
+                                                        <p class="text-center poppinaso">Cucuruchos</p>
+                                                    </div>
+                                                    <div class="col-4 d-flex justify-content-start flex-column align-items-center">
+                                                        <img src="../img/Grupo 19.png" alt="">
+                                                        <p class="text-center poppinaso">Frutillas bañadas en doble chocolate</p>
+                                                    </div>
+                                                    <div class="col-4 d-flex justify-content-start flex-column align-items-center">
+                                                        <img src="../img/Grupo 19.png" alt="">
+                                                        <p class="text-center poppinaso" id="letraChica">Frambuesas bañadas en chocolate blanco y cookies</p>
+                                                    </div>
+                                                    <div class="col-4 d-flex justify-content-start flex-column align-items-center">
+                                                        <img src="../img/Grupo 19.png" alt="">
+                                                        <p class="text-center poppinaso">Frambuesas bañadas en doble chocolate</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Opcion 2 -->
+                                    <div class="accordion-item padreAcordeon col-12">
+                                        <h2 class="accordion-header col-12" id="flush-headingTwo">
+                                            <button class="boton-acordion collapsed col-12" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                                NUESTROS SABORES
+                                                <img class="subdesplazar" src="../img/Grupo 243.svg" alt="">
+                                            </button>
+                                        </h2>
+
+                                        <div id="flush-collapseTwo" class="accordion-collapse collapse col-12" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body col-12" id="body_acordeon-text">
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <!-- SUB ACORDION DE SABORES -->
+                                                        <div class="accordion" id="accordionExample">
+                                                            <!-- 1 -->
+                                                            <div class="accordion-item">
+                                                                <h2 class="accordion-header" id="headingOne">
+                                                                <button class="boton-acordion" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                                    AL NATURAL
+                                                                    <img class="subdesplazar" src="../img/Grupo 243.svg" alt="">
+                                                                </button>
+                                                                </h2>
+                                                                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                                                <div class="accordion-body">
+                                                                    <ul>
+                                                                        <li class="poppinaso">Anana</li>
+                                                                        <li class="poppinaso">Frutilla</li>
+                                                                        <li class="poppinaso">Limon</li>
+                                                                        <li class="poppinaso">Melon</li>
+                                                                    </ul>
+                                                                </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- 2 -->
+                                                            <div class="accordion-item">
+                                                                <h2 class="accordion-header" id="headingTwo">
+                                                                <button class="boton-acordion collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                                    CREMAS
+                                                                    <img class="subdesplazar" src="../img/Grupo 243.svg" alt="">
+                                                                </button>
+                                                                </h2>
+                                                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                                                <div class="accordion-body">
+                                                                    <ul>
+                                                                        <li class="poppinaso">Almendras</li>
+                                                                        <li class="poppinaso">Americana</li>
+                                                                        <li class="poppinaso tachado">Banana</li>
+                                                                        <li class="poppinaso">Cereza</li>
+                                                                        <li class="poppinaso tachado">Cielo</li>
+                                                                        <li class="poppinaso">Coco</li>
+                                                                        <li class="poppinaso">Frutilla</li>
+                                                                        <li class="poppinaso">Frutilla a la Reyna</li>
+                                                                        <li class="poppinaso">Granizado</li>
+                                                                        <li class="poppinaso">Kinotos al Whisky</li>
+                                                                        <li class="poppinaso">Maracuya</li>
+                                                                        <li class="poppinaso">Menta granizada</li>
+                                                                        <li class="poppinaso">Mousse de limon patagonico</li>
+                                                                        <li class="poppinaso">Mousse de limon</li>
+                                                                        <li class="poppinaso">Rusa</li>
+                                                                        <li class="poppinaso">Vainilla</li>
+                                                                    </ul>
+                                                                </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- 3 -->
+                                                            <div class="accordion-item">
+                                                                <h2 class="accordion-header" id="headingThree">
+                                                                <button class="boton-acordion collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                                    CHOCOLATES
+                                                                    <img class="subdesplazar" src="../img/Grupo 243.svg" alt="">
+                                                                </button>
+                                                                </h2>
+                                                                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                                                <div class="accordion-body">
+                                                                    <ul>
+                                                                        <li class="poppinaso">Chocolate</li>
+                                                                        <li class="poppinaso">Chocolate amargo</li>
+                                                                        <li class="poppinaso">Chocolate blanco</li>
+                                                                        <li class="poppinaso">Chocolate con almendras</li>
+                                                                        <li class="poppinaso tachado">Chocolate con pasas al rhum</li>
+                                                                        <li class="poppinaso">Chocolate kinder</li>
+                                                                        <li class="poppinaso">Chocolate suizo</li>
+                                                                        <li class="poppinaso">Havachoc</li>
+                                                                    </ul>
+                                                                </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- 4 -->
+                                                            <div class="accordion-item">
+                                                                <h2 class="accordion-header" id="headingFour">
+                                                                <button class="boton-acordion collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                                                    DULCE DE LECHE
+                                                                    <img class="subdesplazar" src="../img/Grupo 243.svg" alt="">
+                                                                </button>
+                                                                </h2>
+                                                                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                                                <div class="accordion-body">
+                                                                    <ul>
+                                                                        <li class="poppinaso">Chocotorta</li>
+                                                                        <li class="poppinaso">Dulce de leche</li>
+                                                                        <li class="poppinaso">Dulce de leche granizado</li>
+                                                                        <li class="poppinaso">Dulce de leche tentacion</li>
+                                                                        <li class="poppinaso tachado">Dulce de leche Tommy</li>
+                                                                    </ul>
+                                                                </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- 5 -->
+                                                            <div class="accordion-item">
+                                                                <h2 class="accordion-header" id="headingFive">
+                                                                    <button class="boton-acordion collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                                                    ESPECIALES
+                                                                    <img class="subdesplazar" src="../img/Grupo 243.svg" alt="">
+                                                                    </button>
+                                                                </h2>
+                                                                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                                                                    <div class="accordion-body">
+                                                                        <ul>
+                                                                            <li class="poppinaso">Banana Split</li>
+                                                                            <li class="poppinaso tachado">Bananita Dolca</li>
+                                                                            <li class="poppinaso">Crema Oreo</li>
+                                                                            <li class="poppinaso">Crema Tommy</li>
+                                                                            <li class="poppinaso tachado">Ferrero rocher</li>
+                                                                            <li class="poppinaso">Frutos del Bosque</li>
+                                                                            <li class="poppinaso tachado">Mantecol</li>
+                                                                            <li class="poppinaso">Marroc</li>
+                                                                            <li class="poppinaso">Super Sambayon</li>
+                                                                            <li class="poppinaso">Tiramisú</li>
+                                                                            <li class="poppinaso">Tramontana</li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex justify-content-center">
+                                                <a id="linkeo2" class="text-center p-3" href="./productos.html">VER TODOS</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Productos display -- PC -->
+                                <div class="padre_productosPC">
+                                    <div class="titulos_h2">
+                                        <h2 class="h2_PC text-center p-3">NUESTROS PRODUCTOS</h2>
+                                        <h2 class="h2_PC text-center p-3">NUESTROS SABORES</h2>
+                                    </div>
+                        
+                                    <!-- Padre de productos y sabores -->
+                                    <div class="d-flex justify-content-start"> 
+                                        <div class="barrio p-2">
+                                            <div class="row">
+                                                <div class="col-4 d-flex justify-content-start flex-column align-items-center">
+                                                    <img src="../img/Grupo 19.png" alt="">
+                                                    <p class="text-center poppinaso">Bombon escoces</p>
+                                                </div>
+                                                <div class="col-4 d-flex justify-content-start flex-column align-items-center">
+                                                    <img src="../img/Grupo 19.png" alt="">
+                                                    <p class="text-center poppinaso">Trihelado</p>
+                                                </div>
+                                                <div class="col-4 d-flex justify-content-start flex-column align-items-center">
+                                                    <img src="../img/Grupo 19.png" alt="">
+                                                    <p class="text-center poppinaso">Bombon suizo</p>
+                                                </div>
+                                                <div class="col-4 d-flex justify-content-start flex-column align-items-center">
+                                                    <img src="../img/Grupo 19.png" alt="">
+                                                    <p class="text-center poppinaso">Almendrado</p>
+                                                </div>
+                                                <div class="col-4 d-flex justify-content-start flex-column align-items-center">
+                                                    <img src="../img/Grupo 19.png" alt="">
+                                                    <p class="text-center poppinaso">Vasitos</p>
+                                                </div>
+                                                <div class="col-4 d-flex justify-content-start flex-column align-items-center">
+                                                    <img src="../img/Grupo 19.png" alt="">
+                                                    <p class="text-center poppinaso">Cucuruchos</p>
+                                                </div>
+                                                <div class="col-4 d-flex justify-content-start flex-column align-items-center">
+                                                    <img src="../img/Grupo 19.png" alt="">
+                                                    <p class="text-center poppinaso">Frutillas bañadas en doble chocolate</p>
+                                                </div>
+                                                <div class="col-4 d-flex justify-content-start flex-column align-items-center">
+                                                    <img src="../img/Grupo 19.png" alt="">
+                                                    <p class="text-center poppinaso" id="letraChica">Frambuesas bañadas en chocolate blanco y cookies</p>
+                                                </div>
+                                                <div class="col-4 d-flex justify-content-start flex-column align-items-center">
+                                                    <img src="../img/Grupo 19.png" alt="">
+                                                    <p class="text-center poppinaso">Frambuesas bañadas en doble chocolate</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                        
+                                        <div class="barrio">
+                                            <div class="row">
+                                                <div class="col-12 accordion-body" style="margin-top: -9px;">
+                                                    <!-- ACA VA TODO -->
+                                                    <div class="accordion" id="accordionExample">
+                                                        <!-- 1 -->
+                                                        <div class="accordion-item mb-3">
+                                                            <h2 class="accordion-header" id="headingOne">
+                                                            <button class="boton-acordion" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                                AL NATURAL
+                                                                <img class="subdesplazar" src="../img/Grupo 243.svg" alt="">
+                                                            </button>
+                                                            </h2>
+                                                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                                            <div class="accordion-body">
+                                                                <ul>
+                                                                    <li class="poppinaso">Anana</li>
+                                                                    <li class="poppinaso">Frutilla</li>
+                                                                    <li class="poppinaso">Limon</li>
+                                                                    <li class="poppinaso">Melon</li>
+                                                                </ul>
+                                                            </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- 2 -->
+                                                        <div class="accordion-item my-3">
+                                                            <h2 class="accordion-header" id="headingTwo">
+                                                            <button class="boton-acordion collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                                CREMAS
+                                                                <img class="subdesplazar" src="../img/Grupo 243.svg" alt="">
+                                                            </button>
+                                                            </h2>
+                                                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                                            <div class="accordion-body">
+                                                                <ul class="d-flex justify-content-around">
+                                                                    <div>
+                                                                        <li class="poppinaso">Almendras</li>
+                                                                        <li class="poppinaso">Americana</li>
+                                                                        <li class="poppinaso tachado">Banana</li>
+                                                                        <li class="poppinaso">Cereza</li>
+                                                                        <li class="poppinaso tachado">Cielo</li>
+                                                                        <li class="poppinaso">Coco</li>
+                                                                        <li class="poppinaso">Frutilla</li>
+                                                                        <li class="poppinaso">Frutilla a la Reyna</li>
+                                                                    </div>
+                                                                    <div>
+                                                                        <li class="poppinaso">Granizado</li>
+                                                                        <li class="poppinaso">Kinotos al Whisky</li>
+                                                                        <li class="poppinaso">Maracuya</li>
+                                                                        <li class="poppinaso">Menta granizada</li>
+                                                                        <li class="poppinaso">Mousse de limon <br> patagonico</li>
+                                                                        <li class="poppinaso">Mousse de limon</li>
+                                                                        <li class="poppinaso">Rusa</li>
+                                                                        <li class="poppinaso">Vainilla</li>
+                                                                    </div>
+                                                                </ul>
+                                                            </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- 3 -->
+                                                        <div class="accordion-item my-3">
+                                                            <h2 class="accordion-header" id="headingThree">
+                                                            <button class="boton-acordion collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                                CHOCOLATES
+                                                                <img class="subdesplazar" src="../img/Grupo 243.svg" alt="">
+                                                            </button>
+                                                            </h2>
+                                                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                                            <div class="accordion-body">
+                                                                <ul class="d-flex justify-content-around">
+                                                                    <div>
+                                                                        <li class="poppinaso">Chocolate</li>
+                                                                        <li class="poppinaso">Chocolate amargo</li>
+                                                                        <li class="poppinaso">Chocolate blanco</li>
+                                                                        <li class="poppinaso">Chocolate con <br> almendras</li>
+                                                                    </div>
+                                                                    <div>
+                                                                        <li class="poppinaso tachado">Chocolate con <br> pasas al rhum</li>
+                                                                        <li class="poppinaso">Chocolate kinder</li>
+                                                                        <li class="poppinaso">Chocolate suizo</li>
+                                                                        <li class="poppinaso">Havachoc</li>
+                                                                    </div>
+                                                                </ul>
+                                                            </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- 4 -->
+                                                        <div class="accordion-item my-3">
+                                                            <h2 class="accordion-header" id="headingFour">
+                                                            <button class="boton-acordion collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                                                DULCE DE LECHE
+                                                                <img class="subdesplazar" src="../img/Grupo 243.svg" alt="">
+                                                            </button>
+                                                            </h2>
+                                                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                                            <div class="accordion-body">
+                                                                <ul>
+                                                                    <li class="poppinaso">Chocotorta</li>
+                                                                    <li class="poppinaso">Dulce de leche</li>
+                                                                    <li class="poppinaso">Dulce de leche granizado</li>
+                                                                    <li class="poppinaso">Dulce de leche tentacion</li>
+                                                                    <li class="poppinaso tachado">Dulce de leche Tommy</li>
+                                                                </ul>
+                                                            </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- 5 -->
+                                                        <div class="accordion-item my-3">
+                                                            <h2 class="accordion-header" id="headingFive">
+                                                                <button class="boton-acordion collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                                                ESPECIALES
+                                                                <img class="subdesplazar" src="../img/Grupo 243.svg" alt="">
+                                                                </button>
+                                                            </h2>
+                                                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                                                                <div class="accordion-body">
+                                                                    <ul class="d-flex justify-content-around">
+                                                                        <div>
+                                                                            <li class="poppinaso">Banana Split</li>
+                                                                            <li class="poppinaso tachado">Bananita Dolca</li>
+                                                                            <li class="poppinaso">Crema Oreo</li>
+                                                                            <li class="poppinaso">Crema Tommy</li>
+                                                                            <li class="poppinaso tachado">Ferrero rocher</li>
+                                                                            <li class="poppinaso">Frutos del Bosque</li>
+                                                                        </div>
+                                                                        <div>
+                                                                            <li class="poppinaso tachado">Mantecol</li>
+                                                                            <li class="poppinaso">Marroc</li>
+                                                                            <li class="poppinaso">Super Sambayon</li>
+                                                                            <li class="poppinaso">Tiramisú</li>
+                                                                            <li class="poppinaso">Tramontana</li>
+                                                                        </div>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <a id="linkeo2" class="text-center p-3" href="./productos.html">VER TODOS</a>
+                                    </div>
+                                </div>
+
+
+                            </li>
+                            <li class="nav-item nav-item_menu">
+                                <a class="nav-link" href="./punto_de_venta.html">PUNTO DE VENTA</a>
+                            </li>
+                            <li class="nav-item nav-item_menu">
+                                <a class="nav-link" href="./nosotros.html">NOSOTROS</a>
+                            </li>
+                            <li class="nav-item nav-item_menu">
+                                <a class="nav-link" href="./contacto.html">CONTACTO</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Cuadro sabores -->
+    <div class="row sabores_padre row p-5">
+        <h2 class="text-center pb-3">NUESTROS SABORES</h2>
+        <div class="col-md-4 d-flex flex-column">
+            <h3 class="text-center al_natural">AL NATURAL</h3>
+            <ul class = "bcg_white" style="height: 100%;">
+                <li class="poppinaso_productos">Anana</li>
+                <li class="poppinaso_productos">Frutilla</li>
+                <li class="poppinaso_productos">Limon</li>
+                <li class="poppinaso_productos">Melon</li>
+            </ul>
+        </div>
+        <div class="col-md-4 d-flex flex-column">
+            <h3 class="text-center al_crema">CREMAS</h3>
+            <ul class = "bcg_white">
+                <li class="poppinaso_productos">Almendras</li>
+                <li class="poppinaso_productos">Americana</li>
+                <li class="poppinaso_productos tachado">Banana</li>
+                <li class="poppinaso_productos">Cereza</li>
+                <li class="poppinaso_productos tachado">Cielo</li>
+                <li class="poppinaso_productos">Coco</li>
+                <li class="poppinaso_productos">Frutilla</li>
+                <li class="poppinaso_productos">Frutilla a la Reyna</li>
+                <li class="poppinaso_productos">Granizado</li>
+                <li class="poppinaso_productos">Kinotos al Whisky</li>
+                <li class="poppinaso_productos">Maracuya</li>
+                <li class="poppinaso_productos">Menta granizada</li>
+                <li class="poppinaso_productos">Mousse de limon patagonico</li>
+                <li class="poppinaso_productos">Mousse de limon</li>
+                <li class="poppinaso_productos">Rusa</li>
+                <li class="poppinaso_productos">Vainilla</li>
+            </ul>
+        </div>
+        <div class="col-md-4 d-flex flex-column">
+            <h3 class="text-center al_chocolate">CHOCOLATES</h3>
+            <ul class = "bcg_white" style="height: 100%;">
+                <li class="poppinaso_productos">Chocolate</li>
+                <li class="poppinaso_productos">Chocolate amargo</li>
+                <li class="poppinaso_productos">Chocolate blanco</li>
+                <li class="poppinaso_productos">Chocolate con almendras</li>
+                <li class="poppinaso_productos tachado">Chocolate con pasas al rhum</li>
+                <li class="poppinaso_productos">Chocolate kinder</li>
+                <li class="poppinaso_productos">Chocolate suizo</li>
+                <li class="poppinaso_productos">Havachoc</li>
+            </ul>
+        </div>
+        <div class="col-md-6 d-flex flex-column">
+            <h3 class="text-center al_ddl">DULCE DE LECHE</h3>
+            <ul class = "bcg_white" style="height: 100%;">
+                <li class="poppinaso_productos">Chocotorta</li>
+                <li class="poppinaso_productos">Dulce de leche</li>
+                <li class="poppinaso_productos">Dulce de leche granizado</li>
+                <li class="poppinaso_productos">Dulce de leche tentacion</li>
+                <li class="poppinaso_productos tachado">Dulce de leche Tommy</li>
+            </ul>
+        </div>
+        <div class="col-md-6 d-flex flex-column">
+            <h3 class="text-center al_especial">ESPECIALES</h3>
+            <ul class="bcg_white">
+                <li class="poppinaso_productos">Banana Split</li>
+                <li class="poppinaso_productos tachado">Bananita Dolca</li>
+                <li class="poppinaso_productos">Crema Oreo</li>
+                <li class="poppinaso_productos">Crema Tommy</li>
+                <li class="poppinaso_productos tachado">Ferrero rocher</li>
+                <li class="poppinaso_productos">Frutos del Bosque</li>
+                <li class="poppinaso_productos tachado">Mantecol</li>
+                <li class="poppinaso_productos">Marroc</li>
+                <li class="poppinaso_productos">Super Sambayon</li>
+                <li class="poppinaso_productos">Tiramisú</li>
+                <li class="poppinaso_productos">Tramontana</li>
+            </ul>
+        </div>
+    </div>
+
+
+    <!-- CARROUSEL nuestros PRODUCTOS -->
+    <div class="carousel_productos row pb-5">
+        <h2 class="text-center">NUESTROS PRODUCTOS</h2>
+        <div class="carousel__contenedor col-md-12">
+            <button aria-label="Anterior" class="carousel__anterior">
+                <img src="../img/Mover_der.svg" alt="Mover_der.svg">
+            </button>
+
+            <div class="carousel__lista">
+                <div class="carousel__elemento">
+                    <img class="mt-3" src="../img/potes.png" alt="Crema.png">
+                    <p class="parrafo_carousel"">Vainilla</p>
+                    <p class="sector_cremas">CREMAS</p>
+                </div>
+                <div class="carousel__elemento">
+                    <img class="mt-3" src="../img/potes.png" alt="Crema.png">
+                    <p class="parrafo_carousel"">Vainilla</p>
+                    <p class="sector_cremas">CREMAS</p>
+                </div>
+                <div class="carousel__elemento">
+                    <img class="mt-3" src="../img/potes.png" alt="Crema.png">
+                    <p class="parrafo_carousel"">Vainilla</p>
+                    <p class="sector_cremas">CREMAS</p>
+                </div>
+                <div class="carousel__elemento">
+                    <img class="mt-3" src="../img/potes.png" alt="Crema.png">
+                    <p class="parrafo_carousel"">Vainilla</p>
+                    <p class="sector_cremas">CREMAS</p>
+                </div>
+                <div class="carousel__elemento">
+                    <img class="mt-3" src="../img/potes.png" alt="Crema.png">
+                    <p class="parrafo_carousel"">Vainilla</p>
+                    <p class="sector_cremas">CREMAS</p>
+                </div>
+                <div class="carousel__elemento">
+                    <img class="mt-3" src="../img/potes.png" alt="Crema.png">
+                    <p class="parrafo_carousel"">Vainilla</p>
+                    <p class="sector_cremas">CREMAS</p>
+                </div>
+            </div>
+
+            <button aria-label="Siguiente" class="carousel__siguiente">
+                <img src="../img/Mover_izq.svg" alt="Mover_izq.svg">
+            </button>
+        </div>
+        
+        <div role="tablist" class="carousel__indicadores"></div>
+    </div>
+
+    <!-- FOOTER pc -->
+    <footer class="row footer_pc">
+        <!-- Menu -->
+        <div class="col-md-3 d-flex align-items-center ps-4" >
+            <ul class="lista">
+                <li><a class="linkeo" href="../index.html">INICIO</a></li>
+                <li><a class="linkeo" href="./productos.html">PRODUCTOS</a></li>
+                <li><a class="linkeo" href="./punto_de_venta.html">PUNTO DE VENTA</a></li>
+                <li><a class="linkeo" href="./nosotros.html">NOSOTROS</a></li>
+                <li><a class="linkeo" href="./contacto.html">CONTACTO</a></li>
+            </ul>
+        </div>
+        <!-- Iconos redes -->
+        <div class="col-md-6 d-flex justify-content-around align-items-center">
+            <a href="https://api.whatsapp.com/send/?phone=5491133095058&text&app_absent=0" target="_blank">
+                <img src="../img/whatsapp_pc.svg" alt="whatsapp.svg">
+            </a>
+            <a href="https://www.instagram.com/heladeria_tommy/?hl=es-la" target="_blank">
+                <img src="../img/Instagram_pc.svg" alt="Instagram.svg">
+            </a>
+            <a href="https://www.facebook.com/heladeriatommy/" target="blank">
+                <img src="../img/Facebook_pc.svg" alt="Facebook.svg">
+            </a>
+        </div>
+        <!-- legal-->
+        <div class="col-md-3 d-flex align-items-center justify-content-end pe-4">
+            <ul class="lista">
+                <li><a class="linkeo" href="">Aviso legal</a></li>
+                <li><a class="linkeo" href="">Politicas de privacidad</a></li>
+                <li><a class="linkeo" href="">Politicas de cookies</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- FOOTER cell -->
+    <footer class="row footer_cell">
+        <!-- Menu -->
+        <div class="col-8 d-flex align-items-center ps-4">
+            <ul class="lista">
+                <li class="my-3"><a class="linkeo" href="../index.html">INICIO</a></li>
+                <li class="my-3"><a class="linkeo" href="./productos.html">PRODUCTOS</a></li>
+                <li class="my-3"><a class="linkeo" href="./punto_de_venta.html">PUNTO DE VENTA</a></li>
+                <li class="my-3"><a class="linkeo" href="./nosotros.html">NOSOTROS</a></li>
+                <li class="my-3"><a class="linkeo" href="./contacto.html">CONTACTO</a></li>
+            </ul>
+        </div>
+        <!-- Iconos redes -->
+        <div class="col-4 d-flex flex-column justify-content-around align-items-center">
+            <a href="https://api.whatsapp.com/message/G5ZGZK5IF45RG1" target="_blank">
+                <img src="../img/whatsapp_cell.svg" alt="whatsapp.svg">
+            </a>
+            <a href="https://www.instagram.com/heladeria_tommy/?hl=es-la" target="_blank">
+                <img src="../img/Instagram_cell.svg" alt="Instagram.svg">
+            </a>
+            <a href="https://www.facebook.com/heladeriatommy/" target="blank">
+                <img src="../img/Facebook_cell.svg" alt="Facebook.svg">
+            </a>
+        </div>
+        <!-- legal-->
+        <div class="col-12 d-flex align-items-center justify-content-start ps-4">
+            <ul class="lista">
+                <li class="my-2"><a class="linkeo" href="">Aviso legal</a></li>
+                <li class="my-2"><a class="linkeo" href="">Politicas de privacidad</a></li>
+                <li class="my-2"><a class="linkeo" href="">Politicas de cookies</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</div>
+
+
+
+
+
+
+
+
+    <!-- Link de JS -->
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.7/glider.min.js"></script> <!-- Glidder -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="../assets/app.js"></script>
 
 </body>
 </html>
